@@ -51,7 +51,7 @@ body {
 
 .nav_Buscador {
     display: flex;
-    padding:20px;   
+    padding: 20px;
 }
 
 .nav_Buscador input {
@@ -65,8 +65,8 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    top:43px;
-    right:267px;  
+    top: 43px;
+    right: 267px;
 }
 
 .nav_Buscador button {
@@ -75,32 +75,155 @@ body {
     color: white;
     width: 70px;
     height: 35px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap:50px;
 }
 
-.main_Informacion{
-    display:flex;
+.main_Informacion {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding:40px;
-    gap:30px;
+    padding: 40px;
+    gap: 30px;
 }
 
-.info_Texto{
-    flex:1;
+.info_Texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
 }
 
-.info_Imagen{
-    flex:2;
+.info_Imagen {
+    flex: 2;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
 }
 
-.info_Imagen img{
-    width:800px;
-    height:250px;   
+.info_Imagen img {
+    width: 800px;
+    height: 250px;
+}
+
+.info_Texto button {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(44, 45, 45);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#imagen-carrusel {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imagen_Boton {
+    display: flex;
+    background-color: rgba(98, 98, 98, 0.432);
+    color: white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    position:absolute;
+    top:125px;
+    left:40px;
+}
+
+.info_Imagen_Botones{
+    display:flex;
+}
+
+.main_Servicios{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    justify-content: space-evenly;
+}
+
+.servicio{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    border:1px gray solid;
+    border-radius:10px;
+    height:250px;
+    width:300px;
+    gap:10px;
+}
+
+.servicio_Imagen img{
+    width:260px;
+    height:100px;
+}
+
+.servicio_Descripcion{
+    font-size:15px;
+}
+
+.servicio_Descripcion h1{
+    font-size:22px;
+}
+.servicio_Extra{
+    display:flex;
+    text-align: center;
+
+}
+.servicio_Extra button{
+    width:250px;
+    border-radius:5px;
+    border:1px black solid;
+    background-color:white;
+    height:30px;
+}
+
+.proyecto{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    border:1px gray solid;
+    border-radius:10px;
+    height:200px;
+    width:400px;
+    gap:10px;
+}
+
+.proyecto_Imagen img{
+    width:360px;
+    height:100px;
+}
+
+.proyecto_Descripcion{
+    font-size:14px;
+}
+
+.lista_Proyectos{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    justify-content: space-evenly;
+}
+
+.proyectos_Titulo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
 }

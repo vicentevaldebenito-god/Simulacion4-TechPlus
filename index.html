@@ -32,12 +32,22 @@
         <div class="main_Informacion">
             <div class="info_Texto">
                 <p>SOPORTE Y SOLUCIONES</p>
-                <h1>Tecnología que impulsa tu negocio</h1>
+                <h1>Tecnología que<br> impulsa tu negocio</h1>
                 <p>Soporte, desarrollo y asesoria informática para empresas y personas</p>
                 <button>Ver servicios -></button>
             </div>
             <div class="info_Imagen">
-                <img src="static/images/png.png">
+                <div class="info_Imagen_Botones">
+                    <div class="info_Imagen_Boton">
+                        <button onclick="cambiarImagen(-1)" class="imagen_Boton">❮</button>
+                    </div>
+                    <div class="info_Imagen_Boton">
+                        <button onclick="cambiarImagen(1)" class="imagen_Boton">❯</button>
+                    </div>
+                </div>
+                <div class="">
+                    <img id="imagen-carrusel" src="static/images/png.png" alt="Paisaje">
+                </div>
             </div>
         </div>
         <div class="main_Servicios">
@@ -58,8 +68,8 @@
                     <img src="static/images/png.png">
                 </div>
                 <div class="servicio_Descripcion">
-                    <h1>Soporte técnico</h1>
-                    <p>Mantención, diagnóstico y soluciones rápidas</p>
+                    <h1>Redes y contectividad</h1>
+                    <p>Instalación y configuración de redes corporativas.</p>
                 </div>
                 <div class="servicio_Extra">
                     <button>Ver más</button>
@@ -70,8 +80,8 @@
                     <img src="static/images/png.png">
                 </div>
                 <div class="servicio_Descripcion">
-                    <h1>Soporte técnico</h1>
-                    <p>Mantención, diagnóstico y soluciones rápidas</p>
+                    <h1>Desarrollo web</h1>
+                    <p>Sitios web modernos y funcionales.</p>
                 </div>
                 <div class="servicio_Extra">
                     <button>Ver más</button>
@@ -82,27 +92,53 @@
                     <img src="static/images/png.png">
                 </div>
                 <div class="servicio_Descripcion">
-                    <h1>Soporte técnico</h1>
-                    <p>Mantención, diagnóstico y soluciones rápidas</p>
+                    <h1>Seguridad informática</h1>
+                    <p>Protección en datos y asesoría en ciberseguridad.</p>
                 </div>
                 <div class="servicio_Extra">
                     <button>Ver más</button>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="main_Proyectos">
+            <div class="proyectos_Titulo">
                 <h1>Últimos proyectos</h1>
-                <a href="#">Ver más -></a>
+                <a href="#">Ver todos -></a>
             </div>
-            <div>
-
+            <div class="lista_Proyectos">
+                <div class="proyecto">
+                    <div class="proyecto_Imagen">
+                        <img src="static/images/png.png">
+                    </div>
+                    <div class="proyecto_Descripcion">
+                        <h1>Clínica Vida</h1>
+                        <p>Sitio web corporativo con formulario de contacto.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto_Imagen">
+                        <img src="static/images/png.png">
+                    </div>
+                    <div class="proyecto_Descripcion">
+                        <h1>Comercial Norte</h1>
+                        <p>Implementación de red y seguridad.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto_Imagen">
+                        <img src="static/images/png.png">
+                    </div>
+                    <div class="proyecto_Descripcion">
+                        <h1>Colegio Los Robles</h1>
+                        <p>Mantención y soporte técnico.</p>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
     <footer>
 
     </footer>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
